@@ -34,7 +34,7 @@ sudo phpenmod -v 8.3 sqlsrv pdo_sqlsrv
 sudo apt-get install libapache2-mod-php8.3 apache2
 sudo a2dismod mpm_event
 sudo a2enmod mpm_prefork
-sudo a2enmod php8.1
+sudo a2enmod php8.3
 
 
 sudo service apache2 restart
