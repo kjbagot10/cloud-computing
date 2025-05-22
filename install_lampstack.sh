@@ -35,8 +35,8 @@ sudo apt-get install unixodbc-dev
 sudo pecl install sqlsrv
 sudo pecl install pdo_sqlsrv
 sudo su
-printf "; priority=20\nextension=sqlsrv.so\n" > /etc/php/8.3/mods-available/sqlsrv.ini
-printf "; priority=30\nextension=pdo_sqlsrv.so\n" > /etc/php/8.3/mods-available/pdo_sqlsrv.ini
+sudo bash -C 'printf "; priority=20\nextension=sqlsrv.so\n" > /etc/php/8.3/mods-available/sqlsrv.ini'
+sudo bash -C 'printf "; priority=30\nextension=pdo_sqlsrv.so\n" > /etc/php/8.3/mods-available/pdo_sqlsrv.ini'
 
 sudo phpenmod -v 8.3 sqlsrv pdo_sqlsrv
 
